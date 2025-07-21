@@ -29,7 +29,7 @@ def test_login(driver):
     # click sign in button
     # driver.find_element(By.ID, 'submit').click()
     click_element(driver, (By.ID, 'submit'))
-
+    time.sleep(2)
     assert 'home' in driver.current_url
 
 def test_verify_version(driver):
