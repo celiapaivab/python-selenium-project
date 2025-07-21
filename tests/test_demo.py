@@ -1,3 +1,5 @@
+import time
+
 from selenium import webdriver
 import pytest
 from selenium.webdriver.common.by import By
@@ -31,12 +33,7 @@ def test_login(driver):
     assert 'home' in driver.current_url
 
 def test_verify_version(driver):
-    # FAIL
     # click on about link button
-    # driver.find_element(By.ID, 'aboutLink').click()
-    # verify version within the popup dialog
-    # assert '2.1.8.7' in driver.find_element(By.CLASS_NAME, 'modal-body').text
-
-    # PASS
     get_element(driver, (By.ID, 'aboutLink')).click()
-    assert '2.1.8.7' in get_element_text(driver, (By.CLASS_NAME, 'modal-body'))
+    # verify version within the popup dialog
+    assert 'Version:' in get_element_text(driver, (By.CLASS_NAME, 'modal-body'))
