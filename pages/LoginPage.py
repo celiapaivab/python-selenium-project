@@ -14,7 +14,7 @@ class LoginPage(BasePage):
         super().__init__(driver)
 
     def login(self):
-        self.driver.get("{}/login".format(TestConfig.base_url))
+        self.driver.get(TestConfig.base_url)
         self.type_element(LoginPageLocators.username_input, TestConfig.username)
         self.type_element(LoginPageLocators.password_input, TestConfig.password)
         self.click_element(LoginPageLocators.submit_button)
