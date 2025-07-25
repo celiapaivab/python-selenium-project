@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.x-blue.svg)
 ![Selenium](https://img.shields.io/badge/selenium-webdriver-brightgreen)
 ![Pytest](https://img.shields.io/badge/pytest-tested-orange)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/celia-bruno)
 
 
 ---
